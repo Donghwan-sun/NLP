@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+# pycharm
+.idea/
+text_summarization/amazone_review_kaggle_example/data/
