@@ -85,7 +85,7 @@ print(output)
 # 우리가 알아낸 각 카테고리의 우도인 네트워크 출력을 해석하는 것  가장 큰 값의 주소를 알기 위해서 Tensor.topk 를 사용 할 수 있습니다
 def categoryFromOutput(output):
     top_n, top_i = output.topk(1) # 텐서의 가장 큰 값 및 주소
-    category_i = top_i[0].item()     # 텐서에서 정수 값으로 변경
+    category_i = top_i[0].item()  # 텐서에서 정수 값으로 변경
     return all_categories[category_i], category_i
 
 print(categoryFromOutput(output))
