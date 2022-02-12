@@ -131,3 +131,4 @@ dmypy.json
 .idea/
 text_summarization/amazone_review_kaggle_example/data/
 pytorch/rnn/data/
+pytorch/rnn/.data
