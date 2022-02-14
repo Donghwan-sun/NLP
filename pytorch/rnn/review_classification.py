@@ -126,7 +126,7 @@ for e in range(1, EPOCHS+1):
     if not best_val_loss or val_loss < best_val_loss:
         if not os.path.isdir("snapshot"):
             os.makedirs("snapshot")
-        torch.save(model.state_dict(), './snapshot/txtclassification.pt')g
+        torch.save(model.state_dict(), './snapshot/txtclassification.pt')
         best_val_loss = val_loss
 
 model.load_state_dict(torch.load('./snapshot/txtclassification.pt'))
